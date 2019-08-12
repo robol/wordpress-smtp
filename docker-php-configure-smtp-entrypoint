@@ -6,4 +6,4 @@ sed -i "s/@SMTP_HOST@/${SMTP_HOST}/" /etc/msmtprc
 sed -i "s/@FROM_ADDR@/${FROM_ADDR}/" /etc/msmtprc
 sed -i "s/@SMTP_PORT@/${SMTP_PORT}/" /etc/msmtprc
 
-apache2-foreground
+/usr/local/bin/docker-entrypoint.sh apache2-foreground
