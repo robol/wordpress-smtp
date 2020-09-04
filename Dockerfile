@@ -1,4 +1,4 @@
-FROM wordpress:php7.2-apache
+FROM wordpress:php7.4-apache
 
 RUN apt-get -qq update && \ 
 	apt-get -y install msmtp msmtp-mta && \
